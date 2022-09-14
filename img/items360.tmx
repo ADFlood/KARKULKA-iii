@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="9" height="2" tilewidth="360" tileheight="360" nextobjectid="1">
+ <tileset firstgid="1" name="items360Tiles" tilewidth="360" tileheight="360" tilecount="17" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="360" height="360" source="items 360 x 360/flag1.png"/>
+  </tile>
+  <tile id="1">
+   <image width="360" height="360" source="items 360 x 360/flag2.png"/>
+  </tile>
+  <tile id="2">
+   <image width="360" height="360" source="items 360 x 360/flag3.png"/>
+  </tile>
+  <tile id="3">
+   <image width="360" height="360" source="items 360 x 360/platform1.png"/>
+  </tile>
+  <tile id="4">
+   <image width="360" height="360" source="items 360 x 360/platform2.png"/>
+  </tile>
+  <tile id="5">
+   <image width="360" height="360" source="items 360 x 360/platform3.png"/>
+  </tile>
+  <tile id="6">
+   <image width="360" height="360" source="items 360 x 360/door1.png"/>
+  </tile>
+  <tile id="7">
+   <image width="360" height="360" source="items 360 x 360/door2.png"/>
+  </tile>
+  <tile id="8">
+   <image width="360" height="360" source="items 360 x 360/door3.png"/>
+  </tile>
+  <tile id="9">
+   <image width="360" height="360" source="items 360 x 360/door4.png"/>
+  </tile>
+  <tile id="10">
+   <image width="360" height="360" source="items 360 x 360/door5.png"/>
+  </tile>
+  <tile id="11">
+   <image width="360" height="360" source="items 360 x 360/door6.png"/>
+  </tile>
+  <tile id="12">
+   <image width="360" height="360" source="items 360 x 360/door7.png"/>
+  </tile>
+  <tile id="13">
+   <image width="360" height="360" source="items 360 x 360/door8.png"/>
+  </tile>
+  <tile id="14">
+   <image width="360" height="360" source="items 360 x 360/door9.png"/>
+  </tile>
+  <tile id="15">
+   <image width="360" height="360" source="items 360 x 360/stones 1 360x360.png"/>
+  </tile>
+  <tile id="16">
+   <image width="360" height="360" source="items 360 x 360/stones 2 360x360.png"/>
+  </tile>
+ </tileset>
+ <layer name="Vrstva dlaždic 1" width="9" height="2">
+  <data encoding="csv">
+4,5,6,1,2,3,16,17,0,
+7,8,9,10,11,12,13,14,15
+</data>
+ </layer>
+</map>

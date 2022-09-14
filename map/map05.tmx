@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="134" height="8" tilewidth="180" tileheight="180" nextobjectid="450">
+ <tileset firstgid="1" name="world1Image" tilewidth="180" tileheight="180" tilecount="70" columns="7">
+  <image source="../img/world1Image.png" width="1260" height="1800"/>
+  <tile id="6" type="full"/>
+  <tile id="8" type="full"/>
+  <tile id="9" type="full"/>
+  <tile id="10" type="full"/>
+  <tile id="11" type="full"/>
+  <tile id="15" type="full"/>
+  <tile id="16" type="full"/>
+  <tile id="18" type="full"/>
+  <tile id="29" type="upperHalf"/>
+  <tile id="30" type="upperHalf"/>
+  <tile id="31" type="upperHalf"/>
+  <tile id="33" type="upperHalf"/>
+  <tile id="42" type="upperRight"/>
+  <tile id="43" type="upperHalf"/>
+  <tile id="44" type="upperHalf"/>
+  <tile id="45" type="upperLeft"/>
+  <tile id="46" type="upperRight"/>
+  <tile id="47" type="upperLeft"/>
+  <tile id="56" type="upperHalf"/>
+  <tile id="57" type="upperHalf"/>
+  <tile id="58" type="upperHalf"/>
+  <tile id="60" type="upperHalf"/>
+ </tileset>
+ <tileset firstgid="71" name="itemsImage" tilewidth="180" tileheight="180" tilecount="70" columns="10">
+  <image source="../img/itemsImage.png" width="1800" height="1260"/>
+ </tileset>
+ <tileset firstgid="141" name="treesImage" tilewidth="500" tileheight="650" tilecount="9" columns="9">
+  <image source="../img/treesImage.png" width="4500" height="650"/>
+ </tileset>
+ <tileset firstgid="150" name="world5Image" tilewidth="180" tileheight="180" tilecount="77" columns="7">
+  <image source="../img/world5Image.png" width="1260" height="1980"/>
+  <tile id="8" type="full"/>
+  <tile id="9" type="full"/>
+  <tile id="10" type="full"/>
+  <tile id="11" type="full"/>
+  <tile id="15" type="full"/>
+  <tile id="16" type="full"/>
+  <tile id="18" type="full"/>
+  <tile id="29" type="upperHalf"/>
+  <tile id="30" type="upperHalf"/>
+  <tile id="31" type="upperHalf"/>
+  <tile id="33" type="upperHalf"/>
+  <tile id="42" type="upperRight"/>
+  <tile id="43" type="upperHalf"/>
+  <tile id="44" type="upperHalf"/>
+  <tile id="45" type="upperLeft"/>
+  <tile id="46" type="upperRight"/>
+  <tile id="47" type="upperLeft"/>
+  <tile id="56" type="upperHalf"/>
+  <tile id="57" type="upperHalf"/>
+  <tile id="58" type="upperHalf"/>
+  <tile id="60" type="upperHalf"/>
+ </tileset>
+ <tileset firstgid="227" name="itemsBigImage" tilewidth="360" tileheight="360" tilecount="18" columns="9">
+  <image source="../img/itemsBigImage.png" width="3240" height="720"/>
+ </tileset>
+ <tileset firstgid="245" name="world2Image" tilewidth="180" tileheight="180" tilecount="63" columns="7">
+  <image source="../img/world2Image.png" width="1260" height="1620"/>
+  <tile id="8" type="full"/>
+  <tile id="9" type="full"/>
+  <tile id="10" type="full"/>
+  <tile id="11" type="full"/>
+  <tile id="15" type="full"/>
+  <tile id="16" type="full"/>
+  <tile id="18" type="full"/>
+  <tile id="30" type="upperHalf"/>
+  <tile id="31" type="upperHalf"/>
+  <tile id="32" type="upperHalf"/>
+  <tile id="34" type="upperHalf"/>
+  <tile id="43" type="upperRight"/>
+  <tile id="44" type="upperHalf"/>
+  <tile id="45" type="upperHalf"/>
+  <tile id="46" type="upperLeft"/>
+  <tile id="47" type="upperRight"/>
+  <tile id="48" type="upperLeft"/>
+  <tile id="56" type="upperHalf"/>
+  <tile id="57" type="upperHalf"/>
+  <tile id="58" type="upperHalf"/>
+  <tile id="61" type="upperHalf"/>
+ </tileset>
+ <imagelayer name="background2-1Image" offsetx="720" offsety="0">
+  <properties>
+   <property name="type" value="background"/>
+  </properties>
+ </imagelayer>
+ <imagelayer name="background2-2Image" offsetx="720" offsety="0">
+  <properties>
+   <property name="type" value="background"/>
+  </properties>
+ </imagelayer>
+ <imagelayer name="foreground2-1Image" offsetx="720" offsety="0">
+  <properties>
+   <property name="type" value="background"/>
+  </properties>
+ </imagelayer>
+ <imagelayer name="cloudsImage" offsetx="720" offsety="0">
+  <properties>
+   <property name="type" value="background"/>
+  </properties>
+ </imagelayer>
+ <layer name="landscape BEHIND" width="134" height="8">
+  <properties>
+   <property name="type" value="landscape"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,263,264,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,263,264,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,263,264,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,263,264,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,263,264,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,0,0,28,28,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,28,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="landscape additional">
+  <properties>
+   <property name="type" value="landscapeAdditional"/>
+  </properties>
+  <object id="344" gid="103" x="3915" y="1260" width="180" height="180"/>
+  <object id="345" gid="104" x="4095" y="1260" width="180" height="180"/>
+  <object id="358" gid="35" x="10822.5" y="900" width="180" height="180"/>
+  <object id="359" gid="35" x="10822.5" y="810" width="180" height="180"/>
+  <object id="360" gid="35" x="10822.5" y="720" width="180" height="180"/>
+  <object id="361" gid="35" x="10822.5" y="630" width="180" height="180"/>
+  <object id="362" gid="35" x="11407.5" y="900" width="180" height="180"/>
+  <object id="363" gid="35" x="11407.5" y="720" width="180" height="180"/>
+  <object id="364" gid="35" x="11407.5" y="810" width="180" height="180"/>
+  <object id="365" gid="35" x="11407.5" y="630" width="180" height="180"/>
+  <object id="366" gid="35" x="10822.5" y="1260" width="180" height="180"/>
+  <object id="367" gid="35" x="10822.5" y="1170" width="180" height="180"/>
+  <object id="368" gid="35" x="11407.5" y="1170" width="180" height="180"/>
+  <object id="369" gid="35" x="11407.5" y="1260" width="180" height="180"/>
+  <object id="377" gid="103" x="16920" y="1260" width="180" height="180"/>
+  <object id="402" gid="139" x="2857.5" y="1260" width="180" height="180"/>
+  <object id="403" gid="130" x="2947.5" y="1260" width="315" height="315"/>
+  <object id="405" gid="129" x="14175" y="360" width="180" height="180"/>
+  <object id="406" gid="129" x="13950" y="360" width="180" height="180"/>
+  <object id="408" gid="138" x="14467.5" y="360" width="180" height="180"/>
+  <object id="416" gid="35" x="4342.5" y="1260" width="180" height="180"/>
+  <object id="417" gid="35" x="4342.5" y="1080" width="180" height="180"/>
+  <object id="418" gid="35" x="4342.5" y="1170" width="180" height="180"/>
+  <object id="419" gid="35" x="4342.5" y="990" width="180" height="180"/>
+  <object id="420" gid="35" x="6727.5" y="1260" width="180" height="180"/>
+  <object id="421" gid="35" x="6727.5" y="1080" width="180" height="180"/>
+  <object id="422" gid="35" x="6727.5" y="1170" width="180" height="180"/>
+  <object id="423" gid="35" x="6727.5" y="990" width="180" height="180"/>
+  <object id="424" gid="35" x="5107.5" y="1260" width="180" height="180"/>
+  <object id="425" gid="35" x="5107.5" y="1080" width="180" height="180"/>
+  <object id="426" gid="35" x="5107.5" y="1170" width="180" height="180"/>
+  <object id="427" gid="35" x="5107.5" y="990" width="180" height="180"/>
+  <object id="428" gid="35" x="5602.5" y="1260" width="180" height="180"/>
+  <object id="429" gid="35" x="5602.5" y="1080" width="180" height="180"/>
+  <object id="430" gid="35" x="5602.5" y="1170" width="180" height="180"/>
+  <object id="431" gid="35" x="5602.5" y="990" width="180" height="180"/>
+ </objectgroup>
+ <objectgroup name="trees">
+  <properties>
+   <property name="type" value="landscapeAdditional"/>
+  </properties>
+  <object id="399" gid="147" x="13545" y="1260" width="995" height="1293.5"/>
+  <object id="400" gid="147" x="14017.5" y="1305" width="585" height="760.5"/>
+  <object id="401" gid="147" x="14377.5" y="1260" width="675" height="877.5"/>
+  <object id="433" gid="147" x="1102.5" y="1440" width="1035" height="2002.5"/>
+ </objectgroup>
+ <layer name="landscape 1" width="134" height="8">
+  <properties>
+   <property name="type" value="landscape"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,259,260,261,261,261,263,264,0,0,0,0,0,259,260,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,259,260,261,261,261,263,264,245,246,0,0,0,259,260,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,281,282,283,282,284,0,0,281,282,283,282,283,284,0,281,282,284,0,281,282,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,259,260,261,261,261,263,264,252,253,255,255,255,255,261,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,0,0,0,0,0,0,0,0,0,281,282,283,284,288,289,290,289,291,0,0,288,289,290,289,290,291,0,288,289,291,0,288,289,293,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,259,260,261,261,261,263,264,259,260,261,261,261,261,261,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,281,282,283,284,288,289,290,291,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,259,260,261,261,261,263,264,0,261,261,261,261,261,261,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,245,246,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,288,289,290,291,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,245,246,249,250,0,0,0,0,0,0,0,245,252,253,0,0,0,0,0,0,7,7,7,7,0,245,246,249,250,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,259,259,0,0,0,0,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,252,253,256,257,248,248,248,248,248,248,248,252,253,263,264,248,248,248,248,248,0,0,0,0,248,252,253,256,257,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,249,250,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,261,261,255,255,255,255,255,255,255,255,255,261,261,255,255,255,255,255,255,7,7,7,7,255,255,261,261,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,256,257,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="landscape 2" width="134" height="8">
+  <properties>
+   <property name="type" value="landscape"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,0,0,0,0,0,0,111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,250,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,257,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,252,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="landscape additional 2">
+  <properties>
+   <property name="type" value="landscapeAdditional"/>
+  </properties>
+  <object id="404" gid="123" x="11385" y="1035" width="180" height="180"/>
+  <object id="434" gid="123" x="1597.5" y="652.5" width="180" height="180"/>
+  <object id="435" gid="118" x="1440" y="832.5" width="180" height="180"/>
+  <object id="436" gid="103" x="1957.5" y="1260" width="180" height="180"/>
+  <object id="437" gid="129" x="5535" y="360" width="180" height="180"/>
+  <object id="438" gid="129" x="5602.5" y="360" width="180" height="180"/>
+ </objectgroup>
+ <objectgroup name="collisions">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+ </objectgroup>
+ <objectgroup name="landscape objects">
+  <properties>
+   <property name="type" value="landscapeObjects"/>
+  </properties>
+ </objectgroup>
+ <objectgroup name="springs">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+  <object id="343" name="spring" gid="75" x="5310" y="1260" width="180" height="180">
+   <properties>
+    <property name="jumpForce" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="375" name="spring" gid="75" x="11970" y="1080" width="180" height="180">
+   <properties>
+    <property name="jumpForce" type="int" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="boxes">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+ </objectgroup>
+ <objectgroup name="flags">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+  <object id="376" name="door" gid="236" x="16470" y="1260" width="360" height="360">
+   <properties>
+    <property name="direction" value="exit"/>
+    <property name="keysNeeded" type="int" value="3"/>
+    <property name="place" value="exit"/>
+   </properties>
+  </object>
+  <object id="432" name="flag" gid="230" x="2047.5" y="1260" width="360" height="360">
+   <properties>
+    <property name="value" type="int" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="coins">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+  <object id="330" gid="71" x="5940" y="270" width="180" height="180"/>
+  <object id="331" gid="71" x="5850" y="270" width="180" height="180"/>
+  <object id="332" gid="71" x="5760" y="270" width="180" height="180"/>
+  <object id="334" gid="71" x="5670" y="270" width="180" height="180"/>
+  <object id="335" gid="71" x="5580" y="270" width="180" height="180"/>
+  <object id="336" gid="71" x="6030" y="270" width="180" height="180"/>
+  <object id="338" gid="71" x="6120" y="270" width="180" height="180"/>
+  <object id="339" gid="71" x="6210" y="270" width="180" height="180"/>
+  <object id="341" gid="71" x="5220" y="450" width="180" height="180"/>
+  <object id="342" gid="71" x="5220" y="562.5" width="180" height="180"/>
+  <object id="350" gid="71" x="9720" y="1260" width="180" height="180"/>
+  <object id="351" gid="71" x="9900" y="1260" width="180" height="180"/>
+  <object id="352" gid="71" x="10080" y="1260" width="180" height="180"/>
+  <object id="353" gid="71" x="10260" y="1260" width="180" height="180"/>
+  <object id="354" gid="71" x="10440" y="1260" width="180" height="180"/>
+  <object id="355" gid="71" x="10620" y="1260" width="180" height="180"/>
+  <object id="384" gid="71" x="14580" y="720" width="180" height="180"/>
+  <object id="385" gid="71" x="14670" y="720" width="180" height="180"/>
+  <object id="386" gid="71" x="14760" y="720" width="180" height="180"/>
+  <object id="387" gid="71" x="14850" y="720" width="180" height="180"/>
+  <object id="388" gid="71" x="3420" y="1080" width="180" height="180"/>
+  <object id="389" gid="71" x="3420" y="990" width="180" height="180"/>
+  <object id="390" gid="71" x="8100" y="1260" width="180" height="180"/>
+  <object id="391" gid="71" x="8190" y="1260" width="180" height="180"/>
+  <object id="392" gid="71" x="8280" y="1260" width="180" height="180"/>
+  <object id="394" gid="71" x="15120" y="720" width="180" height="180"/>
+  <object id="395" gid="71" x="14940" y="720" width="180" height="180"/>
+  <object id="396" gid="71" x="15030" y="720" width="180" height="180"/>
+ </objectgroup>
+ <objectgroup name="items">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+  <object id="439" name="health" gid="81" x="10980" y="900" width="180" height="180"/>
+  <object id="447" name="shield" gid="85" x="9180" y="1260" width="180" height="180">
+   <properties>
+    <property name="timer" type="int" value="500"/>
+   </properties>
+  </object>
+  <object id="449" name="present" gid="86" x="12780" y="1260" width="180" height="180"/>
+ </objectgroup>
+ <objectgroup name="treasures">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+  <object id="397" name="treasure" gid="87" x="15660" y="360" width="180" height="180"/>
+ </objectgroup>
+ <objectgroup name="platforms">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+  <object id="346" name="platformDynamic" gid="227" x="10080" y="1080" width="360" height="360">
+   <properties>
+    <property name="distance" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="378" name="fallingStone" gid="35" x="14655.5" y="450" width="180" height="180">
+   <properties>
+    <property name="distance" type="int" value="3"/>
+   </properties>
+  </object>
+  <object id="379" name="fallingStone" gid="35" x="15015.5" y="450" width="180" height="180">
+   <properties>
+    <property name="distance" type="int" value="3"/>
+   </properties>
+  </object>
+  <object id="380" name="fallingStone" gid="35" x="14925.5" y="450" width="180" height="180">
+   <properties>
+    <property name="distance" type="int" value="3"/>
+   </properties>
+  </object>
+  <object id="381" name="fallingStone" gid="35" x="14835.5" y="450" width="180" height="180">
+   <properties>
+    <property name="distance" type="int" value="3"/>
+   </properties>
+  </object>
+  <object id="382" name="fallingStone" gid="35" x="14745.5" y="450" width="180" height="180">
+   <properties>
+    <property name="distance" type="int" value="3"/>
+   </properties>
+  </object>
+  <object id="383" name="fallingStone" gid="35" x="15105.5" y="450" width="180" height="180">
+   <properties>
+    <property name="distance" type="int" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="keys">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+  <object id="398" name="key" gid="82" x="14107.5" y="360" width="180" height="180"/>
+  <object id="445" name="key" gid="82" x="6480" y="1260" width="180" height="180"/>
+  <object id="446" name="key" gid="82" x="11160" y="900" width="180" height="180"/>
+ </objectgroup>
+ <layer name="foreground" width="134" height="8">
+  <properties>
+   <property name="type" value="foreground"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,67,67,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="foreground additional">
+  <properties>
+   <property name="type" value="foregroundAdditional"/>
+  </properties>
+  <object id="370" gid="129" x="10777.5" y="360" width="180" height="180"/>
+  <object id="371" gid="129" x="11340" y="360" width="180" height="180"/>
+  <object id="372" gid="129" x="11070" y="360" width="247.5" height="247.5"/>
+  <object id="373" gid="128" x="11205" y="360" width="180" height="180"/>
+  <object id="374" gid="130" x="10845" y="360" width="247.5" height="247.5"/>
+  <object id="407" gid="128" x="13995" y="360" width="225" height="225"/>
+  <object id="410" gid="130" x="16087.5" y="1260" width="382.5" height="382.5"/>
+  <object id="411" gid="123" x="15975" y="495" width="180" height="180"/>
+  <object id="412" gid="101" x="12622.5" y="720" width="180" height="180"/>
+  <object id="413" gid="101" x="13410" y="540" width="180" height="180"/>
+  <object id="414" gid="101" x="12802.5" y="720" width="180" height="180"/>
+  <object id="415" gid="102" x="12712.5" y="720" width="180" height="180"/>
+ </objectgroup>
+ <objectgroup name="characters">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+  <object id="347" name="turtle" x="9922.5" y="1260"/>
+  <object id="349" name="turtle" x="10620" y="1260"/>
+  <object id="440" name="ghost" x="5670" y="630">
+   <properties>
+    <property name="distance" type="int" value="3"/>
+   </properties>
+  </object>
+  <object id="441" name="bee" x="14332.5" y="630"/>
+  <object id="442" name="slime" x="8820" y="1260"/>
+  <object id="444" name="turtle" x="10980" y="360"/>
+ </objectgroup>
+</map>

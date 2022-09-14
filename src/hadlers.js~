@@ -1,0 +1,158 @@
+// handlers.js
+
+//--- Add listener for keys
+window.addEventListener("keydown", keyDownHandler, false);
+window.addEventListener("keyup", keyUpHandler, false);
+
+//--- Add listener for mouse
+window.addEventListener("mousemove", mouseMoveHandler, false);
+canvas.addEventListener("mousedown", mouseDownHandler, false);
+canvas.addEventListener("mouseup", mouseUpHandler, false);
+
+//--- Add listeners for touch
+
+// Define keyboard variables
+var keyPressed = null;
+var UP = 38;
+var DOWN = 40;
+var LEFT = 37;
+var RIGHT = 39;
+var SPACE = 32;
+var ESC = 27;
+
+//--- Create control object
+var control = {
+	up: false,
+	down: false,
+	left: false,
+	right: false,
+	attack: false
+	direction: {
+		vertical: 0,
+		horizonatal: 0,
+		attack: 0
+	}
+};
+
+var cursor = {
+	x: 0,
+	y: 0,
+	click: false,
+	time: 0,
+	timeToClear: 50,
+	makeClick: function(){
+		for (var i = 0; i < button.length; i++)
+		{
+			if (buttons[i].cursorOver)
+			{
+				buttons[i].state = buttons[i].PRESSED;
+				break;
+			}
+		}
+	}
+}
+
+function mouseMoveHandler(event)
+{
+  cursor.x = event.pageX - canvas.offsetLeft;
+  cursor.y = event.pageY - canvas.offsetTop;
+}
+
+function mouseDownHandler(event)
+{
+  cursor.click = true;
+  cursor.makeClick();
+}
+
+function mouseUpHandler(event)
+{
+  cursor.click = false;
+}
+
+function keyDownHandler(event)
+{
+  // click = true; // ???
+  pressButton(event.keyCode);
+
+  keyBeingPressed(event.keyCode); //???
+}
+
+function keyUpHandler(event)
+{
+  // click = false;
+  releaseButton(event.keyCode);
+}
+
+function keyBeingPressed(keyCode)
+{
+	keyPressed = keyCode;
+	setTimeout(function(){keyPressedInvalid();}, 60);
+}
+
+function keyPressedInvalid()
+{
+  keyPressed = null;
+}
+
+function pressButton(key)
+{
+  switch(gameState)
+  {
+    case "playing":
+  		switch(key)
+  		{	case UP: moveUpTrue(); break;
+    		case DOWN: moveDownTrue(); break;
+    		case LEFT: moveLeftTrue(); break;
+    		case RIGHT: moveRightTrue(); break;
+    		case SPACE: attackTrue(); break;
+        case "P".charCodeAt(0): // Pause
+          break;
+    		default: break;
+  		} break;
+  	
+  	case "run intro":
+  	  switch(key)
+  	  {
+  	    case "N".charCodeAt(0): // New game
+  	      break;
+  	    case "L".charCodeAt(0): // Load game
+  	      break;
+  	    case "O".charCodeAt(0): // Options
+  	      break
+  	    case "A".charCodeAt(0): // About
+  	      break;
+  	    default:
+  	      break;
+  	  } break;
+  	  
+  	case "pause":
+  	  break;
+  	
+  	default:
+  	  break;
+  }
+}
+
+function releaseButton(key)
+{
+  switch(gameState)
+  {
+    case "playing":
+  		switch(key)
+  		{	case UP: moveUpFalse(); break;
+    		case DOWN: moveDownFalse(); break;
+    		case LEFT: moveLeftFalse(); break;
+    		case RIGHT: moveRightFalse(); break;
+    		case SPACE: attackFalse(); break;
+    		default: break;
+  		}
+  		break;	
+  	default:
+    	break;
+  }
+}
+
+
+
+
+

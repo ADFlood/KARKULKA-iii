@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="5" height="1" tilewidth="256" tileheight="256" nextobjectid="1">
+ <tileset firstgid="1" name="spiderTiles" tilewidth="256" tileheight="256" tilecount="5" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="spider 256 x 256/spider_entity_000_idle_000.png"/>
+  </tile>
+  <tile id="1">
+   <image width="256" height="256" source="spider 256 x 256/spider_entity_000_idle_001.png"/>
+  </tile>
+  <tile id="2">
+   <image width="256" height="256" source="spider 256 x 256/spider_entity_000_idle_002.png"/>
+  </tile>
+  <tile id="3">
+   <image width="256" height="256" source="spider 256 x 256/spider_entity_000_idle_003.png"/>
+  </tile>
+  <tile id="4">
+   <image width="256" height="256" source="spider 256 x 256/spider_entity_000_idle_004.png"/>
+  </tile>
+ </tileset>
+ <layer name="Vrstva dlaždic 1" width="5" height="1">
+  <data encoding="csv">
+1,2,3,4,5
+</data>
+ </layer>
+</map>

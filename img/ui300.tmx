@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="6" height="2" tilewidth="300" tileheight="300" nextobjectid="1">
+ <tileset firstgid="1" name="uiTiles" tilewidth="300" tileheight="300" tilecount="12" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="1">
+   <image width="300" height="300" source="UI 300 x 300/pause.png"/>
+  </tile>
+  <tile id="6">
+   <image width="300" height="300" source="UI 300 x 300/solid colour.png"/>
+  </tile>
+  <tile id="7">
+   <image width="300" height="300" source="UI 300 x 300/uibutton.png"/>
+  </tile>
+  <tile id="8">
+   <image width="300" height="300" source="UI 300 x 300/woodui.png"/>
+  </tile>
+  <tile id="9">
+   <image width="300" height="300" source="UI 300 x 300/circle.png"/>
+  </tile>
+  <tile id="10">
+   <image width="300" height="300" source="UI 300 x 300/c1.png"/>
+  </tile>
+  <tile id="11">
+   <image width="300" height="300" source="UI 300 x 300/key1.png"/>
+  </tile>
+  <tile id="14">
+   <image width="300" height="300" source="UI 300 x 300/healthbar.png"/>
+  </tile>
+  <tile id="16">
+   <image width="300" height="300" source="UI 300 x 300/health1.png"/>
+  </tile>
+  <tile id="17">
+   <image width="300" height="300" source="UI 300 x 300/health1_gray.png"/>
+  </tile>
+  <tile id="18">
+   <image width="300" height="300" source="UI 300 x 300/healthbar_gray.png"/>
+  </tile>
+  <tile id="19">
+   <image width="300" height="300" source="UI 300 x 300/keypad.png"/>
+  </tile>
+ </tileset>
+ <layer name="Vrstva dlaždic 1" width="6" height="2">
+  <data encoding="csv">
+8,10,2,9,7,20,
+11,12,18,17,19,15
+</data>
+ </layer>
+</map>

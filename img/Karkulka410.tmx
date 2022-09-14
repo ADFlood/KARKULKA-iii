@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="8" height="14" tilewidth="410" tileheight="410" nextobjectid="1">
+ <tileset firstgid="1" name="Karkulka410_Tiles" tilewidth="410" tileheight="410" tilecount="76" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="76">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_idle_000.png"/>
+  </tile>
+  <tile id="77">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_idle_001.png"/>
+  </tile>
+  <tile id="78">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_idle_002.png"/>
+  </tile>
+  <tile id="79">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_idle_003.png"/>
+  </tile>
+  <tile id="80">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_idle_004.png"/>
+  </tile>
+  <tile id="81">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_idle_005.png"/>
+  </tile>
+  <tile id="82">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_idle_006.png"/>
+  </tile>
+  <tile id="83">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_idle_007.png"/>
+  </tile>
+  <tile id="84">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_idle_000.png"/>
+  </tile>
+  <tile id="85">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_idle_001.png"/>
+  </tile>
+  <tile id="86">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_idle_002.png"/>
+  </tile>
+  <tile id="87">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_idle_003.png"/>
+  </tile>
+  <tile id="88">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_idle_004.png"/>
+  </tile>
+  <tile id="89">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_idle_005.png"/>
+  </tile>
+  <tile id="90">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_idle_006.png"/>
+  </tile>
+  <tile id="91">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_idle_007.png"/>
+  </tile>
+  <tile id="92">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_walk_000.png"/>
+  </tile>
+  <tile id="93">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_walk_001.png"/>
+  </tile>
+  <tile id="94">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_walk_002.png"/>
+  </tile>
+  <tile id="95">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_walk_003.png"/>
+  </tile>
+  <tile id="96">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_walk_004.png"/>
+  </tile>
+  <tile id="97">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_walk_005.png"/>
+  </tile>
+  <tile id="98">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_walk_000.png"/>
+  </tile>
+  <tile id="99">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_walk_001.png"/>
+  </tile>
+  <tile id="100">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_walk_002.png"/>
+  </tile>
+  <tile id="101">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_walk_003.png"/>
+  </tile>
+  <tile id="102">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_walk_004.png"/>
+  </tile>
+  <tile id="103">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_walk_005.png"/>
+  </tile>
+  <tile id="104">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_jump_000.png"/>
+  </tile>
+  <tile id="105">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_jump_001.png"/>
+  </tile>
+  <tile id="106">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_jump_002.png"/>
+  </tile>
+  <tile id="107">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_jump_003.png"/>
+  </tile>
+  <tile id="108">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_jump_000.png"/>
+  </tile>
+  <tile id="109">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_jump_001.png"/>
+  </tile>
+  <tile id="110">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_jump_002.png"/>
+  </tile>
+  <tile id="111">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_jump_003.png"/>
+  </tile>
+  <tile id="112">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_throw_000.png"/>
+  </tile>
+  <tile id="113">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_throw_001.png"/>
+  </tile>
+  <tile id="114">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_throw_002.png"/>
+  </tile>
+  <tile id="115">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_throw_003.png"/>
+  </tile>
+  <tile id="116">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_throw_000.png"/>
+  </tile>
+  <tile id="117">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_throw_001.png"/>
+  </tile>
+  <tile id="118">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_throw_002.png"/>
+  </tile>
+  <tile id="119">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_throw_003.png"/>
+  </tile>
+  <tile id="120">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_attack_000.png"/>
+  </tile>
+  <tile id="121">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_attack_001.png"/>
+  </tile>
+  <tile id="122">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_attack_002.png"/>
+  </tile>
+  <tile id="123">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_attack_003.png"/>
+  </tile>
+  <tile id="124">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_attack_000.png"/>
+  </tile>
+  <tile id="125">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_attack_001.png"/>
+  </tile>
+  <tile id="126">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_attack_002.png"/>
+  </tile>
+  <tile id="127">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_attack_003.png"/>
+  </tile>
+  <tile id="128">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_hit_000.png"/>
+  </tile>
+  <tile id="129">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_hit_001.png"/>
+  </tile>
+  <tile id="130">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_hit_002.png"/>
+  </tile>
+  <tile id="131">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_hit_003.png"/>
+  </tile>
+  <tile id="132">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_hit_000.png"/>
+  </tile>
+  <tile id="133">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_hit_001.png"/>
+  </tile>
+  <tile id="134">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_hit_002.png"/>
+  </tile>
+  <tile id="135">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_hit_003.png"/>
+  </tile>
+  <tile id="136">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_die_000.png"/>
+  </tile>
+  <tile id="137">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_die_001.png"/>
+  </tile>
+  <tile id="138">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_die_002.png"/>
+  </tile>
+  <tile id="139">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_die_003.png"/>
+  </tile>
+  <tile id="140">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_die_004.png"/>
+  </tile>
+  <tile id="141">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_die_005.png"/>
+  </tile>
+  <tile id="142">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_die_006.png"/>
+  </tile>
+  <tile id="143">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/R_player_entity_000_die_007.png"/>
+  </tile>
+  <tile id="144">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_die_000.png"/>
+  </tile>
+  <tile id="145">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_die_001.png"/>
+  </tile>
+  <tile id="146">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_die_002.png"/>
+  </tile>
+  <tile id="147">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_die_003.png"/>
+  </tile>
+  <tile id="148">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_die_004.png"/>
+  </tile>
+  <tile id="149">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_die_005.png"/>
+  </tile>
+  <tile id="150">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_die_006.png"/>
+  </tile>
+  <tile id="151">
+   <image width="410" height="410" source="../ASSETS/player/png/resize/L_player_entity_000_die_007.png"/>
+  </tile>
+ </tileset>
+ <layer name="Vrstva dlaždic 1" width="8" height="14">
+  <data encoding="csv">
+77,78,79,80,81,82,83,84,
+85,86,87,88,89,90,91,92,
+93,94,95,96,97,98,0,0,
+99,100,101,102,103,104,0,0,
+105,106,107,108,0,0,0,0,
+109,110,111,112,0,0,0,0,
+113,114,115,116,0,0,0,0,
+117,118,119,120,0,0,0,0,
+121,122,123,124,0,0,0,0,
+125,126,127,128,0,0,0,0,
+129,130,131,132,0,0,0,0,
+133,134,135,136,0,0,0,0,
+137,138,139,140,141,142,143,144,
+145,146,147,148,149,150,151,152
+</data>
+ </layer>
+</map>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="14" height="8" tilewidth="180" tileheight="180" nextobjectid="110">
+ <tileset firstgid="1" name="world1Image" tilewidth="180" tileheight="180" tilecount="70" columns="7">
+  <image source="../img/world1Image.png" width="1260" height="1800"/>
+  <tile id="8" type="full"/>
+  <tile id="9" type="full"/>
+  <tile id="10" type="full"/>
+  <tile id="11" type="full"/>
+  <tile id="15" type="full"/>
+  <tile id="16" type="full"/>
+  <tile id="18" type="full"/>
+  <tile id="29" type="upperHalf"/>
+  <tile id="30" type="upperHalf"/>
+  <tile id="31" type="upperHalf"/>
+  <tile id="33" type="upperHalf"/>
+  <tile id="42" type="upperRight"/>
+  <tile id="43" type="upperHalf"/>
+  <tile id="44" type="upperHalf"/>
+  <tile id="45" type="upperLeft"/>
+  <tile id="46" type="upperRight"/>
+  <tile id="47" type="upperLeft"/>
+  <tile id="56" type="upperHalf"/>
+  <tile id="57" type="upperHalf"/>
+  <tile id="58" type="upperHalf"/>
+  <tile id="60" type="upperHalf"/>
+ </tileset>
+ <tileset firstgid="71" name="itemsBigImage" tilewidth="360" tileheight="360" tilecount="27" columns="9">
+  <image source="../img/itemsBigImage.png" width="3240" height="720"/>
+ </tileset>
+ <tileset firstgid="98" name="itemsImage" tilewidth="180" tileheight="180" tilecount="70" columns="10">
+  <image source="../img/itemsImage.png" width="1800" height="1260"/>
+ </tileset>
+ <tileset firstgid="168" name="treesImage" tilewidth="500" tileheight="650" tilecount="9" columns="9">
+  <image source="../img/treesImage.png" width="4500" height="650"/>
+ </tileset>
+ <imagelayer name="background 1" offsetx="-360" offsety="-540">
+  <properties>
+   <property name="type" value="background"/>
+  </properties>
+ </imagelayer>
+ <imagelayer name="background 2" offsetx="-360" offsety="-540">
+  <properties>
+   <property name="type" value="background"/>
+  </properties>
+ </imagelayer>
+ <imagelayer name="background 3" offsetx="-360" offsety="-540">
+  <properties>
+   <property name="type" value="background"/>
+  </properties>
+ </imagelayer>
+ <layer name="landscape BEHIND" width="14" height="8">
+  <properties>
+   <property name="type" value="landscape"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="landscape additional">
+  <properties>
+   <property name="type" value="landscapeAdditional"/>
+  </properties>
+ </objectgroup>
+ <objectgroup name="trees">
+  <properties>
+   <property name="type" value="landscapeAdditional"/>
+  </properties>
+  <object id="53" gid="169" x="630" y="1260" width="1305" height="1755"/>
+  <object id="65" gid="169" x="64.5" y="1259" width="1000" height="1300"/>
+  <object id="66" gid="169" x="315" y="1260" width="1147.5" height="1530"/>
+  <object id="67" gid="168" x="-273" y="1259" width="1000" height="1300"/>
+ </objectgroup>
+ <layer name="landscape 1" width="14" height="8">
+  <properties>
+   <property name="type" value="landscape"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,36,37,0,
+0,0,0,0,0,0,0,0,0,0,0,28,28,28,
+0,0,0,0,0,0,0,0,0,0,0,28,28,28,
+0,0,0,0,0,0,0,0,0,0,7,7,7,7,
+0,0,0,0,0,0,0,0,0,0,7,7,7,7,
+28,28,28,0,0,0,0,0,0,0,0,28,28,28,
+28,28,28,0,0,0,0,0,0,0,3,28,3,28,
+10,10,10,10,10,10,10,10,10,10,10,10,10,10
+</data>
+ </layer>
+ <layer name="landscape 2" width="14" height="8">
+  <properties>
+   <property name="type" value="landscape"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+66,0,65,66,0,65,65,0,0,0,49,0,66,56,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="collisions">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+  <object id="105" x="1800" y="540" width="720" height="360"/>
+  <object id="109" x="0" y="0" width="90" height="1260"/>
+  <object id="108" x="2430" y="0" width="90" height="1260"/>
+ </objectgroup>
+ <objectgroup name="landscape objects">
+  <properties>
+   <property name="type" value="landscapeObjects"/>
+  </properties>
+ </objectgroup>
+ <objectgroup name="springs">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+  <object id="12" name="spring" gid="148" x="1507.5" y="1260" width="180" height="180">
+   <properties>
+    <property name="jumpForce" type="int" value="4"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="flags and doors">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+  <object id="1" name="flag" gid="71" x="602" y="1260" width="360" height="360">
+   <properties>
+    <property name="value" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="102" name="door" gid="89" x="2075" y="540" width="360" height="360">
+   <properties>
+    <property name="clickAble" type="bool" value="true"/>
+    <property name="level" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="103" name="door" gid="89" x="2071" y="1260" width="360" height="360">
+   <properties>
+    <property name="clickAble" type="bool" value="true"/>
+    <property name="level" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="104" name="door" gid="89" x="112.5" y="1260" width="360" height="360">
+   <properties>
+    <property name="clickAble" type="bool" value="true"/>
+    <property name="level" type="int" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="platforms">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+ </objectgroup>
+ <layer name="foreground" width="14" height="8">
+  <properties>
+   <property name="type" value="foreground"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="characters">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+ </objectgroup>
+ <objectgroup name="keys">
+  <properties>
+   <property name="type" value="levelObjects"/>
+  </properties>
+ </objectgroup>
+</map>

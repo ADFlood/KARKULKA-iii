@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="3" height="2" tilewidth="256" tileheight="256" nextobjectid="1">
+ <tileset firstgid="1" name="tilesGhost" tilewidth="256" tileheight="256" tilecount="6" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="ghost 256 x 256/L_ghost_entity_000_idle_000.png"/>
+  </tile>
+  <tile id="1">
+   <image width="256" height="256" source="ghost 256 x 256/L_ghost_entity_000_idle_001.png"/>
+  </tile>
+  <tile id="2">
+   <image width="256" height="256" source="ghost 256 x 256/L_ghost_entity_000_idle_002.png"/>
+  </tile>
+  <tile id="3">
+   <image width="256" height="256" source="ghost 256 x 256/R_ghost_entity_000_idle_000.png"/>
+  </tile>
+  <tile id="4">
+   <image width="256" height="256" source="ghost 256 x 256/R_ghost_entity_000_idle_001.png"/>
+  </tile>
+  <tile id="5">
+   <image width="256" height="256" source="ghost 256 x 256/R_ghost_entity_000_idle_002.png"/>
+  </tile>
+ </tileset>
+ <layer name="Vrstva dlaždic 1" width="3" height="2">
+  <data encoding="csv">
+4,5,6,
+1,2,3
+</data>
+ </layer>
+</map>

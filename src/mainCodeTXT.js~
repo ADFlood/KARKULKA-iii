@@ -1,0 +1,349 @@
+// mainCode.js
+
+(function() {
+
+var interval = window.setInterval(letsStart, 1000); /// proè tu je zrovna 1000?
+		
+function letsStart()
+{
+  if (allAssetsLoaded)
+  {
+    gameState = "main menu";
+    window.clearInterval(interval);
+    update();
+  }
+}
+
+function update()
+{
+  // The animation loop
+  requestAnimationFrame(update, canvas);
+  
+  if (frame === 0)
+  {
+    frame = totalFrames;
+    gameStateManager();
+    render();
+  }
+  else
+  {
+    frame--;
+  }
+}
+
+function gameStateManager()
+{
+  switch(gameState)
+  {
+    case "main menu":
+    	mainMenu();
+    	break;
+  	case "build level":
+    	buildLevel();
+  	  break;
+    case "playing":
+      playGame();
+      break;
+    case "pause":
+      break;
+    case "game over":
+      gameOver();
+      break
+    default:
+      break;
+  }
+}
+
+function mainMenu()
+{
+	levelData.level = 0;
+	gameState = "build level";
+}
+
+function buildLevel()
+{
+	if (levelData.level === 1){resetGameVariables();}
+	createLevel();
+	gameState = "playing";
+}
+
+function resetGameVariables()
+{
+	lives = 3;
+	score = 0
+}
+
+function playGame()
+{
+	//listenForEvents(); // klávesnice, myš
+	checkButtons(); // myš, touchpad
+  updateLevelObjects();
+  moveCamera();
+  manageGameElements();
+  gameCheck();
+  
+}
+
+function gameCheck()
+{
+	if (lives === 0)
+	{
+		gameState = "game over";
+	}
+}
+
+//function listenForEvents()
+//{
+//}
+
+function checkButtons()
+{
+	for (var i = 0; i < buttons.length; i++)
+	{
+		if (buttons[i].belongsTo === gameState
+		 && buttons[i].isActive)
+		{
+			if (hitTestPointSingle(cursor.x, cursor.y, buttons[i]))
+			{
+				buttons[i].cursorOver = true;
+			}
+			else
+			{
+				buttons[i].cursorOver = false;
+			}
+			buttons[i].update();
+		}
+	}
+}
+
+function updateLevelObjects()
+{
+  // Define function variables
+  var object = null;
+  var levelObjectsLength = levelObjects.length;
+  
+  if (levelObjectsLenght > 0)
+  {
+    for (var i = 0; i < levelObjectsLength; i++)
+    {
+      object = levelObjects[i];
+      
+      //--- Make decision
+      if (object.isActionAble)
+      {
+        if (object === player) 
+        {  
+          readPlayersDecision(object);
+        }
+        else
+        {
+          object.makeDecision();
+        }
+        letObjectReact(object);
+      }
+      
+      //--- Move object
+      if (object.isDynamic)
+      {
+      	// Tady uplatnit speciální režim na žebøíku atd
+      	// Resp. volat funkci objektu, která zpracuje rozhodnutí
+      	
+        // Apply acceleration
+        object.vx += object.accelerationX;
+      
+        // Apply gravity
+        object.vy += object.gravity;
+        
+        // Limit speed
+        Math.min(object.vx, object.speed);
+        Math.max(object.vx, -object.speed);
+        
+        // Move object
+        Math.floor(object.x += object.vx);
+        Math.floor(object.y += object.vy);
+        
+        // Save position before any collision
+        object.previousX = object.x;
+        object.previousY = object.y;
+
+        //--- Check for collision with landscape
+        checkForCollisionWithLandscape(object);
+        
+        //--- Check for collision with other objects
+        checkForCollisionWithOtherObjects(object, levelObjects);
+      }
+      
+      //--- Make action
+      object.action();
+    }
+  }
+}
+
+function checkForCollisionWithLandscape(object)
+{
+	var map = levelData.map;
+	
+	var top = Math.floor((object.collisionY + object.collisionHeight) / TILESIZE);
+	var down = Math.floor((object.collisionY) / TILESIZE);
+	var left = Math.floor((object.collisionX) / TILESIZE);
+	var right = Math.floor((object.collisionX + object.collisionWidth) / TILESIZE);
+	
+	var centerXX = Math.floor((top + down) / 2);
+	var centerYY = Math.floor((left + right) / 2);
+	
+	var mapFields = [];
+	mapFields.push(map[centerXX][top]);		// Up
+	mapFields.push(map[centerXX][down]);	// Down
+	mapFields.push(map[left][centerYY]);	// Left
+	mapFields.push(map[right][centerYY]);	// Right
+	
+	var directions = [];									// dtto
+	directions.push([0][SIZE - (object.collisionY + object.collisionHeight) % TILESIZE]);
+	directions.push([0][(object.collisionY % TILESIZE) * -1]);
+	directions.push([SIZE - (object.collisionX % TILESIZE)][0]);
+	directions.push([(object.collisionX + object.collisionWidth) % TILESIZE * -1][0]);
+	
+	for (var i = 0; i < mapFields.length; i++)
+	{
+		if (mapFields[i] >= BLOCK)
+		{
+			object.x += directions[i][0];
+			object.y += directions[i][1];
+		}
+	}
+}
+
+function checkForCollisionWithOtherObjects(object, array)
+{
+	var otherObject = null;
+	for (var i = 0; i < array.length; i++)
+	{
+	 	otherObject = checkForCollisionWithArray(object, array);
+		if (otherObject !== null)
+	 	{
+	 		otherObject.onCollision(object);
+	  }
+	}
+}
+
+function pushIntoArrayAndSortById(array, sprite)
+{
+	array.push(sprite);
+	for (var i = array.length - 1; i > -1; i--)
+	{
+		if (array[i].id < sprite.id)
+		{
+			for (var j = array.length - 1; j > i + 1; j--)
+			{
+				array[j] = array[j - 1];
+			}
+			array[i + 1] = sprite;
+			break;
+		}
+	}
+}
+
+function removeFromArray(array, sprite)
+{
+	var index = array.indexOf(sprite);
+	if (index !== -1)
+	{
+		array.splice(index; 1);
+	}
+}
+
+//--- Scrolling
+function moveCamera()
+{
+	camera.x = player.centerX() - camera.halfWidth();
+	camery.y = player.centerY() - camera.halfHeight();
+}
+
+/*
+function moveCamera()
+{
+  if (player.x < camera.leftInnerBoundary())
+  {
+    camera.x = Math.max(0, Math.floor(player.x - (camera.width * 0.25)));
+  }
+  if (player.x + player.width > camera.rightInnerBoundary())
+  {
+    camera.x = Math.min(worldWidth - camera.width,
+      Math.floor(player.x + player.width - (camera.width * 0.75)));
+  }
+  if (player.y < camera.upInnerBoundary())
+  {
+    camera.y = Math.max(0, Math.floor(player.y - (camera.height * 0.25)));
+  }
+  if (player.y + player.height > camera.downInnerBoundary())
+  {
+    camera.y = Math.min(worldHeight - camera.height,
+      Math.floor(player.y + player.height - (camera.height * 0.75))); 
+  }
+}
+*/
+
+//--- Render
+function render(event)
+{
+  // Clear the canvas
+  drawingSurface.clearRect(0, 0, canvas.width, canvas.height);
+  
+  // Save drawingSurface
+  drawingSurface.save();
+    
+  // Draw all sprites
+  var spritesToRenderLength = spritesToRender.length;
+  if (var i = 0; i < spritesToRender.length; i++)
+  {
+  	var sprite = spritesToRender[i];
+    if (sprite.visible)
+    {
+    	sprite.update();
+    	
+    	// Move the drawingSurface according to camera position if sprite is scrollable
+      if (sprite.scrollable)
+      {
+        drawingSurface.translate(-camera.x, -camera.y);
+      }
+      
+      // TADY PRIDAT ALPHA !!!   ???
+      drawingSurface.globalAlpha = sprite.alpha;
+      
+      // Render
+      if (!sprite.isText)
+      {
+      	drawingSurface.drawImage(sprite.sourceImage,
+      		sprite.sourceX, sprite.sourceY, sprite.sourceWidth, sprite.sourceHeight,
+         	sprite.x, sprite.y, sprite.width, sprite.height);
+      }
+      else
+      {
+       	drawingSurface.font = sprite.font;
+       	drawingSurface.fillStyle = sprite.fillStyle;
+       	drawingSurface.textAlign = sprite.textAlign;
+       	drawingSurface.textBaseline = sprite.textBaseline;
+       	
+       	if (sprite.textAlign === "middle")
+       	{
+       		var metrics = drawingSurface.measureText(sprite.text);
+  				sprite.width = metrics.width;
+  				sprite.x -= sprite.width / 2;
+  			}
+        	
+       	drawingSurface.fillText(sprite.text, sprite.x, sprite.y);
+      }
+        
+      // Move the drawingSurface according to camera position back
+      if (sprite.scrollable)
+      {
+        drawingSurface.translate(camera.x, camera.y);
+      }
+    }
+  }
+  
+  // Restore drawingSurface
+  drawingSurface.restore();
+}
+
+} // end of imidiate function

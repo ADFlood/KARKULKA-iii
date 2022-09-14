@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="7" height="11" tilewidth="180" tileheight="180" nextobjectid="1">
+ <tileset firstgid="1" name="world1Tiles" tilewidth="720" tileheight="360" tilecount="49" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="180" height="180" source="world1 180 x 180/bush 1 180x180.png"/>
+  </tile>
+  <tile id="1">
+   <image width="180" height="180" source="world1 180 x 180/bush 2 180x180.png"/>
+  </tile>
+  <tile id="2">
+   <image width="180" height="180" source="world1 180 x 180/bush 3 180x180.png"/>
+  </tile>
+  <tile id="3">
+   <image width="360" height="180" source="world1 180 x 180/fence 360x180.png"/>
+  </tile>
+  <tile id="4">
+   <image width="180" height="180" source="world1 180 x 180/full 180x180.png"/>
+  </tile>
+  <tile id="5">
+   <image width="180" height="360" source="world1 180 x 180/ground 1 180x360.png"/>
+  </tile>
+  <tile id="6">
+   <image width="180" height="360" source="world1 180 x 180/ground 2 180x360.png"/>
+  </tile>
+  <tile id="7">
+   <image width="360" height="360" source="world1 180 x 180/ground left 360x360.png"/>
+  </tile>
+  <tile id="8">
+   <image width="360" height="360" source="world1 180 x 180/ground right 360x360.png"/>
+  </tile>
+  <tile id="9">
+   <image width="180" height="180" source="world1 180 x 180/chopped tree 180x180.png"/>
+  </tile>
+  <tile id="10">
+   <image width="180" height="180" source="world1 180 x 180/plant 1 180x180.png"/>
+  </tile>
+  <tile id="11">
+   <image width="180" height="180" source="world1 180 x 180/plant 2 180x180.png"/>
+  </tile>
+  <tile id="12">
+   <image width="720" height="360" source="world1 180 x 180/platform big center 720x360.png"/>
+  </tile>
+  <tile id="13">
+   <image width="720" height="360" source="world1 180 x 180/platform big left 720x360.png"/>
+  </tile>
+  <tile id="14">
+   <image width="720" height="360" source="world1 180 x 180/platform big right 720x360.png"/>
+  </tile>
+  <tile id="15">
+   <image width="360" height="360" source="world1 180 x 180/platform small center 360x360.png"/>
+  </tile>
+  <tile id="16">
+   <image width="360" height="360" source="world1 180 x 180/platform small left 360x360.png"/>
+  </tile>
+  <tile id="17">
+   <image width="360" height="360" source="world1 180 x 180/platform small right 360x360.png"/>
+  </tile>
+  <tile id="18">
+   <image width="180" height="180" source="world1 180 x 180/stone 180x180.png"/>
+  </tile>
+  <tile id="19">
+   <image width="180" height="180" source="world1 180 x 180/wall 1 2x2 180x180.png"/>
+  </tile>
+  <tile id="20">
+   <image width="90" height="90" source="world1 180 x 180/wall 1 90x90.png"/>
+  </tile>
+  <tile id="21">
+   <image width="180" height="180" source="world1 180 x 180/wall 1 180x180.png"/>
+  </tile>
+  <tile id="22">
+   <image width="180" height="180" source="world1 180 x 180/wall 2 2x2 180x180.png"/>
+  </tile>
+  <tile id="23">
+   <image width="90" height="90" source="world1 180 x 180/wall 2 90x90.png"/>
+  </tile>
+  <tile id="24">
+   <image width="180" height="180" source="world1 180 x 180/wall 2 180x180.png"/>
+  </tile>
+  <tile id="25">
+   <image width="360" height="180" source="world1 180 x 180/wall left 360x180.png"/>
+  </tile>
+  <tile id="26">
+   <image width="360" height="180" source="world1 180 x 180/wall right 360x180.png"/>
+  </tile>
+  <tile id="27">
+   <image width="180" height="180" source="world5 180 x 180/bush 1 180x180.png"/>
+  </tile>
+  <tile id="28">
+   <image width="180" height="180" source="world5 180 x 180/bush 2 180x180.png"/>
+  </tile>
+  <tile id="29">
+   <image width="180" height="180" source="world5 180 x 180/bush 3 180x180.png"/>
+  </tile>
+  <tile id="30">
+   <image width="180" height="180" source="world5 180 x 180/bush 4 180x180.png"/>
+  </tile>
+  <tile id="31">
+   <image width="180" height="180" source="world5 180 x 180/crystal 1 180x180.png"/>
+  </tile>
+  <tile id="32">
+   <image width="180" height="180" source="world5 180 x 180/crystal left 180x180.png"/>
+  </tile>
+  <tile id="33">
+   <image width="180" height="180" source="world5 180 x 180/crystal right 180x180.png"/>
+  </tile>
+  <tile id="34">
+   <image width="360" height="180" source="world5 180 x 180/fence 360x180.png"/>
+  </tile>
+  <tile id="35">
+   <image width="180" height="180" source="world5 180 x 180/full 180x180.png"/>
+  </tile>
+  <tile id="36">
+   <image width="180" height="360" source="world5 180 x 180/ground 1 180x360.png"/>
+  </tile>
+  <tile id="37">
+   <image width="180" height="360" source="world5 180 x 180/ground 2 180x360.png"/>
+  </tile>
+  <tile id="38">
+   <image width="360" height="360" source="world5 180 x 180/ground left 360x360.png"/>
+  </tile>
+  <tile id="39">
+   <image width="360" height="360" source="world5 180 x 180/ground right 360x360.png"/>
+  </tile>
+  <tile id="46">
+   <image width="180" height="180" source="world5 180 x 180/stone crystal 180x180.png"/>
+  </tile>
+  <tile id="47">
+   <image width="360" height="180" source="world5 180 x 180/wall left 360x180.png"/>
+  </tile>
+  <tile id="48">
+   <image width="360" height="180" source="world5 180 x 180/wall right 360x180.png"/>
+  </tile>
+  <tile id="52">
+   <image width="720" height="360" source="world5 180 x 180/platform big center 720x360.png"/>
+  </tile>
+  <tile id="53">
+   <image width="720" height="360" source="world5 180 x 180/platform big left 720x360.png"/>
+  </tile>
+  <tile id="54">
+   <image width="720" height="360" source="world5 180 x 180/platform big right 720x360.png"/>
+  </tile>
+  <tile id="55">
+   <image width="360" height="360" source="world5 180 x 180/platform small center 360x360.png"/>
+  </tile>
+  <tile id="56">
+   <image width="360" height="360" source="world5 180 x 180/platform small left 360x360.png"/>
+  </tile>
+  <tile id="57">
+   <image width="360" height="360" source="world5 180 x 180/platform small right 360x360.png"/>
+  </tile>
+ </tileset>
+ <layer name="Vrstva dlaždic 1" width="7" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,22,
+39,0,37,38,40,0,21,
+48,0,36,0,49,0,20,
+0,0,0,0,0,0,25,
+55,0,0,0,58,0,24,
+0,0,0,0,0,0,23,
+53,0,0,0,56,0,11,
+0,0,0,0,0,0,12,
+54,0,0,0,57,0,0,
+1,2,31,35,0,47,19,
+34,33,32,0,0,0,0
+</data>
+ </layer>
+</map>

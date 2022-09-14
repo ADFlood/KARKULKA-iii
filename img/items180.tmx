@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="10" height="7" tilewidth="180" tileheight="180" nextobjectid="1">
+ <tileset firstgid="1" name="itemsSource" tilewidth="180" tileheight="180" tilecount="63" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="91">
+   <image width="180" height="180" source="items 180 x 180/arrow down.png"/>
+  </tile>
+  <tile id="92">
+   <image width="180" height="180" source="items 180 x 180/arrow left.png"/>
+  </tile>
+  <tile id="93">
+   <image width="180" height="180" source="items 180 x 180/arrow right.png"/>
+  </tile>
+  <tile id="94">
+   <image width="180" height="180" source="items 180 x 180/arrow up.png"/>
+  </tile>
+  <tile id="95">
+   <image width="180" height="180" source="items 180 x 180/bomb 1.png"/>
+  </tile>
+  <tile id="96">
+   <image width="180" height="180" source="items 180 x 180/bomb 2.png"/>
+  </tile>
+  <tile id="97">
+   <image width="180" height="180" source="items 180 x 180/boomerang.png"/>
+  </tile>
+  <tile id="98">
+   <image width="180" height="180" source="items 180 x 180/box 1.png"/>
+  </tile>
+  <tile id="99">
+   <image width="180" height="180" source="items 180 x 180/box 2.png"/>
+  </tile>
+  <tile id="100">
+   <image width="180" height="180" source="items 180 x 180/bush big 1.png"/>
+  </tile>
+  <tile id="101">
+   <image width="180" height="180" source="items 180 x 180/bush big 2.png"/>
+  </tile>
+  <tile id="102">
+   <image width="180" height="180" source="items 180 x 180/bush medium snow.png"/>
+  </tile>
+  <tile id="103">
+   <image width="180" height="180" source="items 180 x 180/bush small 1.png"/>
+  </tile>
+  <tile id="104">
+   <image width="180" height="180" source="items 180 x 180/bush small 2.png"/>
+  </tile>
+  <tile id="105">
+   <image width="180" height="180" source="items 180 x 180/cactus 1.png"/>
+  </tile>
+  <tile id="106">
+   <image width="180" height="180" source="items 180 x 180/cactus 2.png"/>
+  </tile>
+  <tile id="107">
+   <image width="180" height="180" source="items 180 x 180/cactus 3.png"/>
+  </tile>
+  <tile id="108">
+   <image width="180" height="180" source="items 180 x 180/cactus 4.png"/>
+  </tile>
+  <tile id="109">
+   <image width="180" height="180" source="items 180 x 180/coin 1.png"/>
+  </tile>
+  <tile id="110">
+   <image width="180" height="180" source="items 180 x 180/coin 2.png"/>
+  </tile>
+  <tile id="111">
+   <image width="180" height="180" source="items 180 x 180/coin 4.png"/>
+  </tile>
+  <tile id="112">
+   <image width="180" height="180" source="items 180 x 180/coint 3.png"/>
+  </tile>
+  <tile id="113">
+   <image width="180" height="180" source="items 180 x 180/crystal 1 180x180.png"/>
+  </tile>
+  <tile id="114">
+   <image width="180" height="180" source="items 180 x 180/crystal 2 180x180.png"/>
+  </tile>
+  <tile id="115">
+   <image width="180" height="180" source="items 180 x 180/crystal 3 180x180.png"/>
+  </tile>
+  <tile id="116">
+   <image width="180" height="180" source="items 180 x 180/crystal 4 180x180.png"/>
+  </tile>
+  <tile id="117">
+   <image width="180" height="180" source="items 180 x 180/crystal left 180x180.png"/>
+  </tile>
+  <tile id="118">
+   <image width="180" height="180" source="items 180 x 180/crystal right 180x180.png"/>
+  </tile>
+  <tile id="119">
+   <image width="180" height="180" source="items 180 x 180/crystal small 180x180.png"/>
+  </tile>
+  <tile id="120">
+   <image width="180" height="180" source="items 180 x 180/dirt 180x180.png"/>
+  </tile>
+  <tile id="121">
+   <image width="180" height="180" source="items 180 x 180/fence 180x180.png"/>
+  </tile>
+  <tile id="122">
+   <image width="180" height="180" source="items 180 x 180/fence snow 180x180.png"/>
+  </tile>
+  <tile id="123">
+   <image width="180" height="180" source="items 180 x 180/flower 1.png"/>
+  </tile>
+  <tile id="124">
+   <image width="180" height="180" source="items 180 x 180/flower 2.png"/>
+  </tile>
+  <tile id="125">
+   <image width="180" height="180" source="items 180 x 180/grave 180x180.png"/>
+  </tile>
+  <tile id="126">
+   <image width="180" height="180" source="items 180 x 180/health.png"/>
+  </tile>
+  <tile id="127">
+   <image width="180" height="180" source="items 180 x 180/chopped tree 1 180x180.png"/>
+  </tile>
+  <tile id="128">
+   <image width="180" height="180" source="items 180 x 180/chopped tree 2 180x180.png"/>
+  </tile>
+  <tile id="129">
+   <image width="180" height="180" source="items 180 x 180/key.png"/>
+  </tile>
+  <tile id="130">
+   <image width="180" height="180" source="items 180 x 180/leaves 1.png"/>
+  </tile>
+  <tile id="131">
+   <image width="180" height="180" source="items 180 x 180/leaves 2.png"/>
+  </tile>
+  <tile id="132">
+   <image width="180" height="180" source="items 180 x 180/life.png"/>
+  </tile>
+  <tile id="133">
+   <image width="180" height="180" source="items 180 x 180/moneybag.png"/>
+  </tile>
+  <tile id="134">
+   <image width="180" height="180" source="items 180 x 180/mushroom 180x180.png"/>
+  </tile>
+  <tile id="135">
+   <image width="180" height="180" source="items 180 x 180/mushroom small.png"/>
+  </tile>
+  <tile id="136">
+   <image width="180" height="180" source="items 180 x 180/pillow.png"/>
+  </tile>
+  <tile id="137">
+   <image width="180" height="180" source="items 180 x 180/power.png"/>
+  </tile>
+  <tile id="138">
+   <image width="180" height="180" source="items 180 x 180/present.png"/>
+  </tile>
+  <tile id="139">
+   <image width="180" height="180" source="items 180 x 180/rock small.png"/>
+  </tile>
+  <tile id="140">
+   <image width="180" height="180" source="items 180 x 180/roots 1 180x180.png"/>
+  </tile>
+  <tile id="141">
+   <image width="180" height="180" source="items 180 x 180/roots 2 180x180.png"/>
+  </tile>
+  <tile id="142">
+   <image width="180" height="180" source="items 180 x 180/sceleton 180x180.png"/>
+  </tile>
+  <tile id="143">
+   <image width="180" height="180" source="items 180 x 180/spike 1.png"/>
+  </tile>
+  <tile id="144">
+   <image width="180" height="180" source="items 180 x 180/spike 2.png"/>
+  </tile>
+  <tile id="145">
+   <image width="180" height="180" source="items 180 x 180/spring 1.png"/>
+  </tile>
+  <tile id="146">
+   <image width="180" height="180" source="items 180 x 180/spring 2.png"/>
+  </tile>
+  <tile id="147">
+   <image width="180" height="180" source="items 180 x 180/spring 3.png"/>
+  </tile>
+  <tile id="148">
+   <image width="180" height="180" source="items 180 x 180/stone 180x180.png"/>
+  </tile>
+  <tile id="149">
+   <image width="180" height="180" source="items 180 x 180/stone crystal 180x180.png"/>
+  </tile>
+  <tile id="150">
+   <image width="180" height="180" source="items 180 x 180/treasure 1 open.png"/>
+  </tile>
+  <tile id="151">
+   <image width="180" height="180" source="items 180 x 180/treasure 1.png"/>
+  </tile>
+  <tile id="152">
+   <image width="180" height="180" source="items 180 x 180/treasure 2 open.png"/>
+  </tile>
+  <tile id="153">
+   <image width="180" height="180" source="items 180 x 180/treasure 2.png"/>
+  </tile>
+ </tileset>
+ <layer name="Vrstva dlaždic 1" width="10" height="7">
+  <data encoding="csv">
+110,111,113,112,146,147,148,96,97,98,
+127,130,133,134,138,139,152,151,154,153,
+145,144,0,0,0,0,92,93,94,95,
+142,141,126,143,122,123,99,100,0,0,
+149,150,128,129,121,140,136,135,0,0,
+124,125,131,132,101,102,103,104,105,106,
+114,115,116,117,118,119,120,107,108,109
+</data>
+ </layer>
+</map>
